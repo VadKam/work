@@ -1,12 +1,10 @@
 <?php
 
-function config()
-{
+function config(){
     return include __DIR__ . '/../config.php';
 }
 
-function DBConnect()
-{
+function DBConnect(){
     $config = config();
     mysql_connect(
         $config['db']['host'],
@@ -16,8 +14,7 @@ function DBConnect()
     mysql_select_db($config['db']['dbname']);
 }
 
-function DBQuery($sql)
-{
+function DBQuery($sql){
     DBConnect();
     $res = mysql_query($sql);
     if (!$res) {

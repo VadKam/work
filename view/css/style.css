@@ -43,11 +43,13 @@ h1, p , div, a{
 #knopkanews{
     max-width: 250px;
     background: #FAFAFA;
-    float: left;
+    position: fixed;
     padding: 7px;
     border-radius: 4px;
     margin: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    bottom: 0;
+    right: 200px;
 }
     #knopkanews a{
         color: #000;

@@ -8,3 +8,6 @@ $opt = array(
     //PDO::ATTR_PERSISTENT => true //Постоянное соединение
 );
 $db = new PDO($db, $user, $password, $opt);
+
+require_once __DIR__ . '/models/modelnews.php';
+require_once __DIR__ . '/controller/controller.php';
